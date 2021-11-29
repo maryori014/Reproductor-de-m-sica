@@ -1,0 +1,229 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lobster', cursive;
+  }
+  .titulo{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      max-width: 125em;
+      text-align: center;
+      background-color: rgb(32, 32, 32);
+  }
+  .titulo h2{
+    justify-content: center;
+      font-size: 100px;
+      -webkit-text-fill-color:transparent;
+      -webkit-background-clip:text;
+      background-color: rgb(43, 43, 43);
+      background-image: url(https://i.pinimg.com/564x/60/8b/ee/608bee1d5f6c88bbb761a59cfa6bae38.jpg);
+      background-attachment: fixed;
+      margin-bottom: 15px;
+  }
+
+body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .main-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2a2a2ad0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(../img/Estrellas.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+.buscador {
+    position: relative;
+    display: inline-block;
+    padding: 13px 849px;
+    color: rgba(180, 94, 94, 0.849);
+    letter-spacing: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: rgb(43, 43, 43);
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 12px;
+}
+.buscador:hover {
+    background: #a945c7;
+    box-shadow: 0 0 0px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;
+ }
+.buscador span{
+    position: absolute;
+    display: block;
+}
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#a945c7);
+ }
+ .buscador:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#a945c7);
+}
+ .buscador:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+}
+.buscador:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+}
+.buscador:hover #span4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.main-playing {
+    width: 35rem;
+    height: 35rem;
+    background-color: #a0679b54;
+}
+.list-song-container {
+    width: 35rem;
+    height: 70rem;
+    background-color: #b36fad54;
+}
+.songs {
+  background-color: rgba(103, 158, 202, 0.568);
+  margin-top: 3em;
+  padding: 3em;
+  height: 500px;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.songs::-webkit-scrollbar{
+  width: 10px;
+}
+.songs::-webkit-scrollbar-thumb{
+  background: #073b53d8;
+}
+.volume {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(161, 229, 238, 0.364);
+}
+.volume.input{
+    cursor: pointer;
+}
+  
+.main-playing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.cover-container {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;  
+}
+  .data-song-container {
+    
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    align-items: center;
+  }
+  .cover-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-duration: 4s;
+  }
+  
+  .list-item {
+    background-color: #571e57af;
+    display: flex;
+    margin-bottom: 1em;
+    color: aliceblue;
+  }
+  
+  .list-item img {
+    width: 7rem;
+    height: 6rem;
+  }
+  .progress-bar {
+    width: 70%;
+  }
+  .progress-bar input {
+    width: 100%;
+    cursor: pointer;
+  }
+  .controls-container {
+    height: 30px;
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    filter: invert(1);
+    opacity: 0.6;
+    height: 80%;
+    width: auto;
+    cursor: pointer;
+}
+
+.icon:hover{
+    opacity: 1;
+}
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}

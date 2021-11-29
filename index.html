@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Spotify | Home</title>
+  </head>
+  <body>
+    <div class= "titulo">
+        <h2>Spoofy</h2>
+    </div>
+    <div class="buscador">
+      <input id="buscar" type="text" placeholder="Busca tu música :)"/>
+          <span id="span1"></span>
+          <span id="span2"></span>
+          <span id="span3"></span>
+          <span id="span4"></span>
+      </a>
+    </div>
+    </div>
+    <div class="main-container">
+      
+      
+      <div class="main-playing">
+        <div class="cover-container">
+          <img id="cover-image" src="imagenes/finneas.jpg" />
+        </div>
+        <div class="progress-bar">
+          <input id="progress-bar" value="0" type="range" min="0" />
+        </div>
+        <div class="data-song-container">
+          <h1 id="title-song">...</h1>
+          <p id="artist-song">...</p>
+        </div>
+
+        <div class="controls-container">
+          <button src="Forward.png" alt="" class="icon back" id="prev-btn">🡸</button>
+          <button src="Play.png" alt="" class="icon" id="play-btn">▶</button>
+          <button src="Forward.png" alt="" class="icon" id="next-btn">🡺</button>
+        </div>
+        <div class="volume">
+          <span class="control mdi mdi-volume-high"></span>
+          <input type="range" name="volume" id="volume-control" min="0" max="1" step="0.01">
+      </div>
+      </div>
+      <div class = "songs">
+        <section id="list-song-container" class="list-song-container"></section>
+      </div>  
+    </div>
+    <audio id="audio-playing" ></audio>   
+    <script src="js/script.js"></script>
+  </body>
+</html>
